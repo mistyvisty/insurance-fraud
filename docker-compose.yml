@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: fraud_db
+    environment:
+      POSTGRES_DB: insurance_fraud
+      POSTGRES_USER: preeti
+      POSTGRES_PASSWORD: fraud123
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U preeti -d insurance_fraud"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  streamlit:
+    build: .
+    container_name: fraud_app
+    ports:
+      - "8501:8501"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DB_HOST: postgres
+      DB_NAME: insurance_fraud
+      DB_USER: preeti
+      DB_PASSWORD: fraud123
+
+volumes:
+  postgres_data:
