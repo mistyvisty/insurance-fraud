@@ -16,6 +16,7 @@ A full-stack fraud detection dashboard that analyzes 10,000 healthcare insurance
 - Python — data seeding and querying
 - Streamlit — interactive dashboard
 - Plotly — charts and visualizations
+- 🐳 Docker — local development setup
 
 ## Dashboard Features
 - KPI Overview (fraud rate, total claims, amounts)
@@ -29,4 +30,5 @@ A full-stack fraud detection dashboard that analyzes 10,000 healthcare insurance
 - Top Fraudulent Providers
 - Provider Volume vs Fraud Risk
 
-Built by Preeti Bhardwaj — [github.com/mistyvisty](https://github.com/mistyvisty)
+## 👩‍💻 Built By
+Preeti Bhardwaj — [github.com/mistyvisty](https://github.com/mistyvisty)
