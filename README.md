@@ -1,4 +1,6 @@
-# Healthcare Insurance Fraud Detection Dashboard
+# üè• Healthcare Insurance Fraud Detection Dashboard
+
+üî¥ **Live App:** [View Dashboard](https://insurance-fraud-d5ex7mayryye9gjonynmbg.streamlit.app)
 
 ## Overview
 A full-stack fraud detection dashboard that analyzes 10,000 healthcare insurance claims to identify fraudulent patterns using SQL analytics and interactive visualizations.
@@ -10,15 +12,10 @@ A full-stack fraud detection dashboard that analyzes 10,000 healthcare insurance
 - Fraud Gap: $972,902
 
 ## Tech Stack
-- PostgreSQL 15 ó window functions and CTEs
-- Docker + Docker Compose ó containerized setup
-- Python ó data seeding and querying
-- Streamlit ó interactive dashboard
-- Plotly ó charts and visualizations
-
-## How to Run
-docker-compose up --build
-Then open http://localhost:8501
+- PostgreSQL (Supabase) ‚Äî window functions and CTEs
+- Python ‚Äî data seeding and querying
+- Streamlit ‚Äî interactive dashboard
+- Plotly ‚Äî charts and visualizations
 
 ## Dashboard Features
 - KPI Overview (fraud rate, total claims, amounts)
@@ -32,4 +29,4 @@ Then open http://localhost:8501
 - Top Fraudulent Providers
 - Provider Volume vs Fraud Risk
 
-Built by Preeti Bhardwaj ó github.com/mistyvisty
+Built by Preeti Bhardwaj ‚Äî [github.com/mistyvisty](https://github.com/mistyvisty)
